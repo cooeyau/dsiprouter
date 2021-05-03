@@ -72,3 +72,4 @@ null;FLT_MSTEAMS;sip2.pstnhub.microsoft.com;32;0;name:msteams-sbc,gwgroup:0
 null;FLT_MSTEAMS;sip3.pstnhub.microsoft.com;32;0;name:msteams-sbc,gwgroup:0
 null;FLT_MSTEAMS;sip.pstnhub.dod.teams.microsoft.us;32;0;name:msteams-sbc,gwgroup:0
 null;FLT_MSTEAMS;sip.pstnhub.gov.teams.microsoft.us;32;0;name:msteams-sbc,gwgroup:0
+null;FLT_INTERNAL;INTERNAL_IP;INTERNAL_NET_PREFIX;0;name:dsip-internal,gwgroup:0

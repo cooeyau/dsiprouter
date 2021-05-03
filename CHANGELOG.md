@@ -5,7 +5,8 @@
 
 [//]: # (END_SECTION HEADER)
 [//]: # (START_SECTION COMMITS
-4de26cfe35cbff4ed9ada409a27f029534338e9d
+bc4571b985af26248a5362932963b5c6cc5b3326
+dccb7db03c6f0f3ae7b2564174c848a262c15d92
 2c1e9d5bd1ae3c8bb20829b50831a43314fb5546
 3860b0e3a3d786bb94cdeb7d03b6535540514367
 70f7542b32a5df58c7d04bbdf2100d91950f8bc2
@@ -1938,10 +1939,35 @@ a72121b9551921aa3dced32d943c6034ba318f82
 ce6c5aac0db5476dc496c34388e4f9ce2c4b86e5
 b46b1e64f06f448bde78b98e3ae8228ce5f96067
 END_SECTION COMMITS)
-[//]: # (START_SECTION 4de26cfe35cbff4ed9ada409a27f029534338e9d)
+[//]: # (START_SECTION bc4571b985af26248a5362932963b5c6cc5b3326)
+### Improved DNS Hostname Resolution And Caching
+
+> Commit: [bc4571b985af26248a5362932963b5c6cc5b3326](https://github.com/dOpensource/dsiprouter/commit/bc4571b985af26248a5362932963b5c6cc5b3326)  
+> Date: Mon, 3 May 2021 17:17:41 -0400  
+> Author: Tyler Moore (tmoore@goflyball.com)  
+> Committer: Tyler Moore (tmoore@goflyball.com)  
+> Signed: Tyler Moore (devopsec) <tmoore@goflyball.com>  
+
+
+- Resolves [#325](https://github.com/dOpensource/dsiprouter/issues/325)
+- implement new caching system via cronjob
+- update dr_gateways DNS names to resolve to all available IP's
+- update uacreg DNS names to resolve to all available IP's
+- update DNS names every 5 minutes
+- update backend to transparently access/store JSON in description/tag fields
+- update all other tables to use new schema for JSON storage
+- move local address to cron updated entry in address table
+- add FLT_INTERNAL flag for internal use addresses
+- add/update a few utility functions to `dsip_lib.sh`
+
+
+---
+
+[//]: # (END_SECTION bc4571b985af26248a5362932963b5c6cc5b3326)
+[//]: # (START_SECTION dccb7db03c6f0f3ae7b2564174c848a262c15d92)
 ### Permissions And Sources Bug Fixes
 
-> Commit: [4de26cfe35cbff4ed9ada409a27f029534338e9d](https://github.com/dOpensource/dsiprouter/commit/4de26cfe35cbff4ed9ada409a27f029534338e9d)  
+> Commit: [dccb7db03c6f0f3ae7b2564174c848a262c15d92](https://github.com/dOpensource/dsiprouter/commit/dccb7db03c6f0f3ae7b2564174c848a262c15d92)  
 > Date: Mon, 26 Apr 2021 21:22:18 -0400  
 > Author: Tyler Moore (tmoore@goflyball.com)  
 > Committer: Tyler Moore (tmoore@goflyball.com)  
@@ -1961,7 +1987,7 @@ END_SECTION COMMITS)
 
 ---
 
-[//]: # (END_SECTION 4de26cfe35cbff4ed9ada409a27f029534338e9d)
+[//]: # (END_SECTION dccb7db03c6f0f3ae7b2564174c848a262c15d92)
 [//]: # (START_SECTION 2c1e9d5bd1ae3c8bb20829b50831a43314fb5546)
 ### Misc Bug Fixes
 
